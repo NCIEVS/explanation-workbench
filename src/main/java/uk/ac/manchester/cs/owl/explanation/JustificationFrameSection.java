@@ -7,9 +7,13 @@ import org.protege.editor.owl.ui.frame.AbstractOWLFrameSection;
 import org.protege.editor.owl.ui.frame.OWLFrame;
 import org.protege.editor.owl.ui.frame.OWLFrameSectionRow;
 import org.semanticweb.owl.explanation.api.Explanation;
+import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLAnnotationPropertyDomainAxiom;
+import org.semanticweb.owlapi.model.OWLAnnotationPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLSubAnnotationPropertyOfAxiom;
 
 import java.util.Comparator;
 import java.util.List;
@@ -87,4 +91,36 @@ public class JustificationFrameSection extends AbstractOWLFrameSection<Explanati
     public boolean canAcceptDrop(List<OWLObject> objects) {
         return false;
     }
+
+
+
+	@Override
+	public void visit(OWLAnnotationAssertionAxiom axiom) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void visit(OWLSubAnnotationPropertyOfAxiom axiom) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void visit(OWLAnnotationPropertyDomainAxiom axiom) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void visit(OWLAnnotationPropertyRangeAxiom axiom) {
+		// TODO Auto-generated method stub
+		
+	}
 }
