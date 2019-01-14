@@ -3,7 +3,9 @@ package uk.ac.manchester.cs.owl.explanation;
 import org.semanticweb.owl.explanation.api.Explanation;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLAxiom;
-import uk.ac.manchester.cs.owl.explanation.ordering.*;
+
+import uk.ac.manchester.cs.owl.explanation.ordering.ExplanationTree;
+import uk.ac.manchester.cs.owl.explanation.ordering.Tree;
 
 import java.util.*;
 /*
@@ -55,7 +57,7 @@ public class JustificationFormattingManager {
     }
 
     private void init(Explanation<?> explanation) {
-        ExplanationOrderer orderer = new ProtegeExplanationOrderer(OWLManager.createOWLOntologyManager());
+        ProtegeExplanationOrderer orderer = new ProtegeExplanationOrderer(OWLManager.createOWLOntologyManager());
         ExplanationTree tree = orderer.getOrderedExplanation((OWLAxiom) explanation.getEntailment(), explanation.getAxioms());
         List<OWLAxiom> ordering = new ArrayList<>();
         Map<OWLAxiom, Integer> im = new HashMap<>();

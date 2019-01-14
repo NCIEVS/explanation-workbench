@@ -85,7 +85,7 @@ public class CachingRootDerivedGenerator implements RootDerivedReasoner, Disposa
         return Collections.emptySet();
     }
 
-    public void ontologiesChanged(List<? extends OWLOntologyChange> list) throws OWLException {
+    public void ontologiesChanged(List<? extends OWLOntologyChange> list) {
         dirty = true;
     }
 

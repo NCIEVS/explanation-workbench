@@ -43,20 +43,13 @@
 	
 	<scm>
 		<connection>scm:git:git@github.com:protegeproject/explanation-workbench.git</connection>
-		<developerConnection>scm:git:git@github.com:protegeproject/explanation-workbench.git</developerConnection>
-		<url>https://github.com/protegeproject/explanation-workbench</url>
+		<developerConnection>scm:git:git@github.com:bdionne/explanation-workbench.git</developerConnection>
+		<url>https://github.com/bdionne/explanation-workbench</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/protegeproject/explanation-workbench/issues</url>
+		<url>https://github.com/bdionne/explanation-workbench/issues</url>
 	</issueManagement>	
-
-	<repositories>
-        <repository>
-            <id>github</id>
-            <url>https://github.com/protegeproject/mvn-repo/raw/master/releases</url>
-        </repository>
-    </repositories>
     
 	<dependencies>
 
