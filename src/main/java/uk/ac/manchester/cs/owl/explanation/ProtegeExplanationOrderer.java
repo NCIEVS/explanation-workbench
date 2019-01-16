@@ -595,7 +595,7 @@ public class ProtegeExplanationOrderer implements ExplanationOrderer {
 
         @Override
         public void visit(OWLObjectPropertyDomainAxiom axiom) {
-            if (!axiom.getProperty().isAnonymous()) {
+            if (!axiom.isAnonymous()) {
              
                 getAxiomsForLHS(axiom.getProperty().asOWLObjectProperty()).add(
                         axiom);
