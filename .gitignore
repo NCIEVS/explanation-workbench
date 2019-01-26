@@ -11,3 +11,6 @@ plugin.xml
 .idea
 *.iml
 build/
+
+.DS_Store
+foo
